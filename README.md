@@ -1,14 +1,16 @@
 📊 Data Engineering Job Preparation
 
 This repository is a structured collection of my learning journey and practice work focused on Data Engineering job preparation. It includes core concepts, hands-on coding, and interview-focused materials.
-🎯 Purpose
 
+🎯 Purpose
 The main goal of this repository is to:
 
 Strengthen fundamentals in Python and SQL
 Practice real-world Data Engineering problems
 Prepare for job interviews
 Build consistency through daily learning
+
+
 🧠 Topics Covered
 SQL (Joins, Aggregations, Window Functions)
 Python (Data handling, scripting, automation basics)
