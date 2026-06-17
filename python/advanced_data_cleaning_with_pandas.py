@@ -9,11 +9,6 @@ dirty_data ={
     'salary': [60000, np.nan, 50000, 60000, 45000, np.nan, np.nan]
 }
 
-# df=pd.DataFrame(dirty_data)
-# print("--- ১. মূল নোংরা ডেটাসেট ---")
-# print(df)
-# print("\n" + "="*40 + "\n")
-
 df=pd.DataFrame(dirty_data)
 print("--- ১. মূল নোংরা ডেটাসেট ---")
 print(df)
@@ -29,8 +24,9 @@ print("\n" + "="*40 + "\n")
 # ট্রান্সফরমেশন লজিক: 
 # ডিপার্টমেন্ট ফাঁকা থাকলে 'Unknown' বসাবো এবং স্যালারি ফাঁকা থাকলে সবার গড় (Average) স্যালারি বসাবো
 df['department']= df['department'].fillna('Unknown')
-average_salary=df['salary'].mean()
+average_salary=df['salary'].mean() # গড় স্যালারি বের করা
 df['salary']=df['salary'].fillna(average_salary)
+
 # average_salary = df['salary'].mean() # গড় স্যালারি বের করা
 # df['salary'] = df['salary'].fillna(average_salary)
 
