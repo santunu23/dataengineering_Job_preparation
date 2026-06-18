@@ -9,10 +9,11 @@ emp_data = {
     'salary': [50000, 75000, 110000, 60000, 85000, 45000, 95000]
 }
 
-df = pd.DataFrame(emp_data)
+df=pd.DataFrame(emp_data)
 print("--- ১. মূল ডেটাসেট (আউটলায়ারসহ) ---")
 print(df)
 print("\n" + "="*50 + "\n")
+
 
 df_clean=df[df['age']<=100].copy()
 print("--- ২. আউটলায়ার (১৫০ বছর) ফেলে দেওয়ার পর ক্লিন ডেটাসেট ---")
@@ -27,6 +28,5 @@ age_labels = ['Junior', 'Mid-Level', 'Senior']
 
 # pd.cut() দিয়ে নতুন ক্যাটাগরি কলাম তৈরি করা
 df_clean['experience_category'] = pd.cut(df_clean['age'], bins=age_bins, labels=age_labels)
-
 print("--- ৩. বিনিং করার পর চূড়ান্ত রিপোর্ট (Experience Category সহ) ---")
 print(df_clean)
