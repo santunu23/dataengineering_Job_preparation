@@ -2,6 +2,7 @@ import psycopg2
 import pandas as pd
 
 connection = None
+
 try:
     connection = psycopg2.connect(
         user ="postgres", 
@@ -18,6 +19,7 @@ try:
     print(f"Successfully Extract DAta.The file is created in your folder '{csv_file_name}' ")
     print("\n Five rows of downloaded file")
     print(df.head())
+    
 except(Exception, psycopg2.Error) as error:
     print("Error in the pipeline",error)
 

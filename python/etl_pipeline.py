@@ -35,6 +35,5 @@ try:
     print("এখন pgAdmin-এ গিয়ে 'chittagong_bonus_employees' টেবিলটি চেক করো।")
 
 
-
 except Exception as error:
     print("\n পাইপলাইনে সমস্যা হয়েছেঃ",error)
