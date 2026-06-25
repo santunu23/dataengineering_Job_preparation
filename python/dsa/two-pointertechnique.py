@@ -17,3 +17,5 @@ def two_sum_sorted(numbers, target):
             left += 1
         else:
             right -= 1
+       
+print(two_sum_sorted([2, 3, 4, 7, 11, 15], 9))
