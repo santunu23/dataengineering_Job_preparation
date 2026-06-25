@@ -21,3 +21,7 @@ def is_palidrome(s):
         left += 1
         right -= 1
     return True
+
+
+print(is_palidrome("madam"))  # True
+print(is_palidrome("chittagong"))  # False
