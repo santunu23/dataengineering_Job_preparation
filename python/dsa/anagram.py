@@ -1,6 +1,21 @@
 s ="anagram"
 t="nagaram"
 
+
+def is_anagram(s, t):
+    hashmap1 ={}
+    hashmap2 = {}
+    for char in s:
+        if char in hashmap1:
+            hashmap1[char] +=1
+        else:
+            hashmap1[char] =1
+    for char in t:
+        if char in hashmap2:
+            hashmap2[char] +=1
+        else:
+            hashmap2[char] =1
+
 def is_anagram(s, t):
     hashmap1 = {}
     hashmap2 = {}
@@ -18,6 +33,7 @@ def is_anagram(s, t):
     return hashmap1 == hashmap2
     
 print(is_anagram(s, t))
+
 
 
 
